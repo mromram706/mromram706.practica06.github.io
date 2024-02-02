@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 6</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: sans-serif;
+            margin-bottom: 30px;
+        }
+
+        #contenedor {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 50px;
+        }
+
+        .imagen {
+            flex: 0 0 calc(50% - 70px);
+        }
+
+        .imagen img {
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        #tabla{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        @media (max-width: 480px) {
+
+            #contenedor {
+                padding: 15px;
+                gap: 15px;
+            }
+
+            .imagen {
+                border: none;
+
+            }
+
+            .imagen img {
+                width: 270px;
+                height: 270px;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Galería de imágenes</h1>
+
+    <div id="contenedor">
+
+        <div class="imagen">
+            <picture>
+                <source media="(max-width:480px)" srcset="https://raw.githubusercontent.com/mromram706/imagenes/main/tema_05/img_movil/imagen1_S.jpg">
+
+                <source media="(max-width:768px)" srcset="https://raw.githubusercontent.com/mromram706/imagenes/main/tema_05/img_movil/imagen1.jpg">
+
+                <img src="https://raw.githubusercontent.com/mromram706/imagenes/main/tema_05/img_jpg/imagen1.jpg" alt="Imagen ficticia de Úbeda" />
+            </picture>
+        </div>
+
+        <div class="imagen">
+            <picture>
+                <source media="(max-width:480px)" srcset="https://raw.githubusercontent.com/mromram706/imagenes/main/tema_05/img_movil/imagen2_S.jpg">
+
+                <source media="(max-width:768px)" srcset="https://raw.githubusercontent.com/mromram706/imagenes/main/tema_05/img_movil/imagen2.jpg">
+
+                <img src="https://raw.githubusercontent.com/mromram706/imagenes/main/tema_05/img_jpg/imagen2.jpg" alt="Imagen ficticia de Úbeda" />
+            </picture>
+        </div>
+        <div class="imagen">
+            <picture>
+                <source media="(max-width:480px)" srcset="https://raw.githubusercontent.com/mromram706/imagenes/main/tema_05/img_movil/imagen3_S.jpg">
+
+                <source media="(max-width:768px)" srcset="https://raw.githubusercontent.com/mromram706/imagenes/main/tema_05/img_movil/imagen3.jpg">
+
+                <img src="https://raw.githubusercontent.com/mromram706/imagenes/main/tema_05/img_jpg/imagen3.jpg" alt="Imagen ficticia de Úbeda" />
+            </picture>
+        </div>
+        <div class="imagen">
+            <picture>
+                <source media="(max-width:480px)" srcset="https://raw.githubusercontent.com/mromram706/imagenes/main/tema_05/img_movil/imagen4_S.jpg">
+
+                <source media="(max-width:768px)" srcset="https://raw.githubusercontent.com/mromram706/imagenes/main/tema_05/img_movil/imagen4.jpg">
+
+                <img src="https://raw.githubusercontent.com/mromram706/imagenes/main/tema_05/img_jpg/imagen4.jpg" alt="Imagen ficticia de Úbeda" />
+            </picture>
+        </div>
+        <div class="imagen">
+            <picture>
+                <source media="(max-width:480px)" srcset="https://raw.githubusercontent.com/mromram706/imagenes/main/tema_05/img_movil/imagen5_S.gif">
+    
+                <source media="(max-width:768px)" srcset="https://raw.githubusercontent.com/mromram706/imagenes/main/tema_05/img_gif/imagen5.gif">
+
+                <img src="https://raw.githubusercontent.com/mromram706/imagenes/main/tema_05/img_gif/imagen5.gif" alt="Imagen ficticia de Úbeda" />
+            </picture>
+        </div>
+        <div class="imagen">
+            <picture>
+                <source media="(max-width:480px)" srcset="https://raw.githubusercontent.com/mromram706/imagenes/main/tema_05/img_movil/imagen6_S.gif">
+    
+                <source media="(max-width:768px)" srcset="https://raw.githubusercontent.com/mromram706/imagenes/main/tema_05/img_gif/imagen6.gif">
+
+                <img src="https://raw.githubusercontent.com/mromram706/imagenes/main/tema_05/img_gif/imagen6.gif" alt="Imagen ficticia de Úbeda" />
+            </picture>
+        </div>
+        <div class="imagen">
+            <picture>
+                <source media="(max-width:480px)" srcset="https://raw.githubusercontent.com/mromram706/imagenes/main/tema_05/img_movil/imagen7_S.gif">
+    
+                <source media="(max-width:768px)" srcset="https://raw.githubusercontent.com/mromram706/imagenes/main/tema_05/img_gif/imagen7.gif">
+
+                <img src="https://raw.githubusercontent.com/mromram706/imagenes/main/tema_05/img_gif/imagen7.gif" alt="Imagen ficticia de Úbeda" />
+            </picture>
+        </div>
+        <div class="imagen">
+            <picture>
+                <picture>
+                    <source media="(max-width:480px)" srcset="https://raw.githubusercontent.com/mromram706/imagenes/main/tema_05/img_movil/imagen7_S.gif">
+    
+                    <source media="(max-width:768px)" srcset="https://raw.githubusercontent.com/mromram706/imagenes/main/tema_05/img_gif/imagen8.gif">
+    
+                    <img src="https://raw.githubusercontent.com/mromram706/imagenes/main/tema_05/img_gif/imagen8.gif" alt="Imagen ficticia de Úbeda" />
+                </picture>
+            </picture>
+        </div>
+        <div class="imagen">
+            <picture>
+                <source media="(max-width:480px)" srcset="https://raw.githubusercontent.com/mromram706/imagenes/main/tema_05/img_movil/imagen9_S.png">
+
+                <source media="(max-width:768px)" srcset="https://raw.githubusercontent.com/mromram706/imagenes/main/tema_05/img_png/imagen9.png">
+
+                <img src="https://raw.githubusercontent.com/mromram706/imagenes/main/tema_05/img_png/imagen9.png" alt="Imagen ficticia de Úbeda" />
+            </picture>
+        </div>
+        <div class="imagen">
+            <picture>
+                <source media="(max-width:480px)" srcset="https://raw.githubusercontent.com/mromram706/imagenes/main/tema_05/img_movil/imagen10_S.png">
+
+                <source media="(max-width:768px)" srcset="https://raw.githubusercontent.com/mromram706/imagenes/main/tema_05/img_png/imagen10.png">
+
+                <img src="https://raw.githubusercontent.com/mromram706/imagenes/main/tema_05/img_png/imagen10.png" alt="Imagen ficticia de Úbeda" />
+            </picture>
+        </div>
+        <div class="imagen">
+            <picture>
+                <source media="(max-width:480px)" srcset="https://raw.githubusercontent.com/mromram706/imagenes/main/tema_05/img_movil/imagen11_S.png">
+
+                <source media="(max-width:768px)" srcset="https://raw.githubusercontent.com/mromram706/imagenes/main/tema_05/img_png/imagen11.png">
+
+                <img src="https://raw.githubusercontent.com/mromram706/imagenes/main/tema_05/img_png/imagen11.png" alt="Imagen ficticia de Úbeda" />
+            </picture>
+        </div>
+        <div class="imagen">
+            <picture>
+                <source media="(max-width:480px)" srcset="https://raw.githubusercontent.com/mromram706/imagenes/main/tema_05/img_movil/imagen12_S.png">
+
+                <source media="(max-width:768px)" srcset="https://raw.githubusercontent.com/mromram706/imagenes/main/tema_05/img_png/imagen12.png">
+
+                <img src="https://raw.githubusercontent.com/mromram706/imagenes/main/tema_05/img_png/imagen12.png" alt="Imagen ficticia de Úbeda" />
+            </picture>
+        </div>
+    </div>
+
+    <div id="tabla">
+        <table>
+            <thead>
+                <tr>
+                  <th>Tamaño medio</th>
+                  <th>Formato de la imagen</th>
+                  <th>Tiempo de carga</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>Lo que sea</td>
+                <td>Lo que sea</td>
+                <td>Lo que sea</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+
+</html>
